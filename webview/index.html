@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="{PATH}/styles.css">
+    <link rel="stylesheet" href="{PATH}/src/highlightjs/default.min.css">
+    <script src="{PATH}/src/highlightjs/highlight.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="recordingState">
+        <span class="recording-state-icon"></span><span id="recordingStateText"></span>
+    </div>
+    <div id="controlDiv">
+        <button id="controlButton"></button>
+    </div>
+    <div id="prepareDiv" class="hide">
+        <h2>Get ready to record in</h2>
+        <h1 id="prepareNumber"></h1>
+    </div>
+    <div id="outputDiv" class="hide">
+        <h2>Preview:</h2>
+        <pre><code id="codeplayer"></code></pre>
+        <button id="playButton">Play from beginning</button>
+        <div>Current timestamp (ms): <span id="codeplayer-ts"></span></div>
+
+        <h2>Output Code:</h2>
+        <pre><code id="outputCode"></code></pre>
+        <button id="copyOutputCode">Copy Code</button>
+
+        <textarea id="outputCodeRaw" class="hide"></textarea>
+        <textarea id="originalOutputCode" class="hide">&lt;pre&gt;&lt;code id="codeplayer"&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/projectkenneth/rotoscodejs-player@1.0.0/build/rotoscodejs-player.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    var recordingData = {RD};
+    var rotoscodejsObj = rotoscodejs({
+        element: document.getElementById('codeplayer'),
+        recordingData: recordingData,
+        onRender: (el) => {
+            // use any highlighter code
+            // Example:
+            //   hljs.highlightElement(el);
+        },
+        onPlay: (runningTimestamp, endTimestamp) => {
+            // render timestamp somewhere
+        }
+    });
+&lt;/script&gt;</textarea>
+    </div>
+    <script src="{PATH}/src/rotoscodejs-player.min.js" type="text/javascript"></script>
+    <script src="{PATH}/src/rotoscodejs-vscodeext-webview.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+#controlButton {
+    border: 1pt solid #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;    
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+}
+
+#controlButton.is-recording {
+    background-color: red;
+}
+
+#controlButton:hover {
+    filter: brightness(70%);
+}
+
+#recordingState {
+    margin-bottom: 10px;
+}
+
+#recordingState .recording-state-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+#recordingState.is-recording .recording-state-icon {
+    background-color: green;
+    color: green;
+}
+
+.hide {
+    display: none;
+}
+
+#prepareDiv {
+    text-align: center;
+}
