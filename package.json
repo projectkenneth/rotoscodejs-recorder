@@ -2,7 +2,9 @@
 	"name": "rotoscodejs-vscodeext",
 	"displayName": "RotoscodeJS Recorder",
 	"description": "Capture code changes and share them using a playable widget.",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "projectkenneth",
+	"repository": "https://github.com/projectkenneth/rotoscodejs-recorder",
 	"engines": {
 		"vscode": "^1.59.0"
 	},
