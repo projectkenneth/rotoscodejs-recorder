@@ -14,3 +14,5 @@ Capture code changes and share them using a playable widget
 5. A preview of the recording will be displayed which can be played again from the beginning.
 6. Click on the `Copy Code` to copy the embed code to the clipboard.
 7. Paste the embed code to your webpage.
+
+The embed code makes use of [RotoscodeJS Player](https://github.com/projectkenneth/rotoscodejs-player).
