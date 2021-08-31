@@ -4,7 +4,11 @@
 	"description": "Capture code changes and share them using a playable widget.",
 	"version": "1.0.0",
 	"publisher": "projectkenneth",
-	"repository": "https://github.com/projectkenneth/rotoscodejs-recorder",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/projectkenneth/rotoscodejs-recorder"
+	},
+	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.59.0"
 	},
