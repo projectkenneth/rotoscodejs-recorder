@@ -2,7 +2,7 @@
 	"name": "rotoscodejs-vscodeext",
 	"displayName": "RotoscodeJS Recorder",
 	"description": "Capture code changes and share them using a player widget.",
-	"version": "1.1.0",
+	"version": "1.0.2",
 	"publisher": "projectkenneth",
 	"license": "SEE LICENSE IN LICENSE",
 	"keywords": [
