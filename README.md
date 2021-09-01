@@ -1,6 +1,6 @@
 # RotoscodeJS Recorder (VSCode Extension)
 
-Capture code changes and share them using a playable widget
+Capture code changes and share them using a player widget
 
 ## Features
 * Record your code changes as you type
@@ -15,4 +15,4 @@ Capture code changes and share them using a playable widget
 6. Click on the `Copy Code` to copy the embed code to the clipboard.
 7. Paste the embed code to your webpage.
 
-The embed code makes use of [RotoscodeJS Player](https://github.com/projectkenneth/rotoscodejs-player).
+The player widget can be found at [RotoscodeJS Player](https://github.com/projectkenneth/rotoscodejs-player).
